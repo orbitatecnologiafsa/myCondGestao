@@ -32,8 +32,9 @@ class SessaoController extends Controller
     //adm login
     public function admLoginFMR()
     {
+        return view('login.login-adm');
     }
-    public function admPostLogin()
+    public function admPostLogin(LoginRequest $login)
     {
     }
     public function admLogoutPost()
@@ -43,8 +44,9 @@ class SessaoController extends Controller
     //porteiro
     public function porteiroLoginFMR()
     {
+        return view('login.login-porteiro');
     }
-    public function porteiroPostLogin()
+    public function porteiroPostLogin(LoginRequest $login)
     {
     }
     public function porteiroLogoutPost()
@@ -54,12 +56,13 @@ class SessaoController extends Controller
     //sincdico login
     public function sindicoLoginFMR()
     {
+        return view('login.login-sindico');
     }
-    public function sindicoPostLogin()
+
+    public function sindicoPostLogin(LoginRequest $login)
     {
     }
     public function sindicoLogoutPost()
     {
     }
-
 }

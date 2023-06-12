@@ -1,5 +1,5 @@
 @extends('tamplate.layout.main')
-@section('titulo', 'Login')
+@section('titulo', 'Login - porteiro')
 @section('conteudo')
 
 @section('classBody', '')
@@ -15,7 +15,7 @@
                                 <p class="mb-0">Entre com o email e senha</p>
                             </div>
                             <div class="card-body">
-                                <form role="form" action="{{ route('login') }}" method="POST">
+                                <form role="form" action="" method="POST">
                                     @csrf
                                     <div class="mb-3">
                                         <input type="email" class="form-control form-control-lg" name="email"
@@ -53,7 +53,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                            {{-- <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                 <p class="mb-4 text-sm mx-auto">
                                     Problema ao logar?
                                     <a href="https://core3tec.tomticket.com/chat/index?id=EP28882&ac=1848448P20022019111518"
@@ -61,15 +61,15 @@
                                         suporte</a>
 
                                 </p>
-                                <p class="mb-4 text-sm mx-auto">
+                                {{-- <p class="mb-4 text-sm mx-auto">
                                    Esqueceu a senha clique?
                                     <a href="https://core3tec.tomticket.com/chat/index?id=EP28882&ac=1848448P20022019111518"
                                         class="text-primary text-gradient font-weight-bold" target="_blanc">
                                         Aqui</a>
 
-                                </p>
+                                </p> --}}
 
-                            </div>
+                            {{-- </div> --}}
                         </div>
                     </div>
                     <div
