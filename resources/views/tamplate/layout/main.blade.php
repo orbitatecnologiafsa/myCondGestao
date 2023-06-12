@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,6 +28,8 @@
 </head>
 
 <body class="@yield('classBody')">
+    @stack('sidbar')
+    @stack('navbar')
     @yield('conteudo')
     @include('tamplate.plugins.javascript')
     @include('tamplate.componentes.msg')
