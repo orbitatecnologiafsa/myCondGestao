@@ -1,12 +1,8 @@
 <?php
 
-use App\Http\Controllers\SessaoController;
-use Illuminate\Support\Facades\Route;
+require __DIR__.'/login-adm.php';
+require __DIR__.'/login-porteiro.php';
+require __DIR__.'/login-sindico.php';
 
 
 
-Route::controller(SessaoController::class)->group(function(){
-    Route::get('/','loginFMR')->middleware('guest');
-    Route::post('/login','postLogin')->name('login')->middleware('guest');
-    Route::get('/reset-password','resetSenhaFRM')->name('reset-senha')->middleware('guest');
-});

@@ -11,21 +11,11 @@ use Illuminate\Support\Facades\Validator;
 
 class SessaoController extends Controller
 {
-    public function loginFMR()
-    {
-        return view('login.login');
-    }
-
-    public function postLogin(LoginRequest $login)
-    {
-        dd($login->all());
-    }
 
     public function resetSenhaFRM(Request $req)
     {
         Auth::logout();
         $req->session()->regenerate();
-        
     }
     public function verifyEmailReset(ResetEmailRequest $req)
     {
@@ -38,4 +28,38 @@ class SessaoController extends Controller
     {
         dd($req->all());
     }
+
+    //adm login
+    public function admLoginFMR()
+    {
+    }
+    public function admPostLogin()
+    {
+    }
+    public function admLogoutPost()
+    {
+    }
+
+    //porteiro
+    public function porteiroLoginFMR()
+    {
+    }
+    public function porteiroPostLogin()
+    {
+    }
+    public function porteiroLogoutPost()
+    {
+    }
+
+    //sincdico login
+    public function sindicoLoginFMR()
+    {
+    }
+    public function sindicoPostLogin()
+    {
+    }
+    public function sindicoLogoutPost()
+    {
+    }
+
 }
