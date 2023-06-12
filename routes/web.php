@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 require __DIR__.'/login/login-master.php';
+require __DIR__.'/adm/adm-master.php';
+require __DIR__.'/porteiro/porteiro-master.php';
+require __DIR__.'/sindico/sindico-master.php';
 
 // Route::get('/', function () {
 //     return view('welcome');
