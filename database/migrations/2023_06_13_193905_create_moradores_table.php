@@ -10,25 +10,17 @@ return new class extends Migration
      * Run the migrations.
      *
      * @return void
-     * nome
-telefone unique
-cpf
-bloco
-numero
-email
-status_fk
-created_at
-updated_at
-
      */
     public function up()
     {
         Schema::create('moradores', function (Blueprint $table) {
             $table->id();
-            $table->integer('telefone');
+            $table->integer('telefone')->unique();
             $table->string('cpf')->unique();
+            $table->string('bloco');
+            $table->string('nome');
             $table->integer('numero');
-            $table->integer('status_fk');
+            $table->enum('status',['ativo','bloqueado'])->default('ativo');
             $table->string('email')->unique();
             $table->timestamps();
         });

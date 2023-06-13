@@ -10,25 +10,19 @@ return new class extends Migration
      * Run the migrations.
      *
      * @return void
-     *
-     * id
-nome
-cpf unique
-img
-created_at
-updated_at
-
      */
-
-
     public function up()
     {
-        Schema::create('visitantes', function (Blueprint $table) {
+        Schema::create('funcionarios', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->longText('img');
-            $table->string('cpf')->unique();
             $table->timestamps();
+            $table->string('email')->unique();
+            $table->integer('funcao_id');
+            $table->integer('telefone')->unique();
+            $table->string('email_login')->unique()->nullable();
+            $table->string('password')->nullable();
+            $table->string('nome');
+            $table->string('cpf')->unique();
         });
     }
 
@@ -39,6 +33,6 @@ updated_at
      */
     public function down()
     {
-        Schema::dropIfExists('visitantes');
+        Schema::dropIfExists('funcionarios');
     }
 };
