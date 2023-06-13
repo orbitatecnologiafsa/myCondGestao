@@ -29,8 +29,10 @@
 
 <body class="@yield('classBody')">
     @stack('sidbar')
-    @stack('navbar')
-    @yield('conteudo')
+    <main class="@yield('classMain') ">
+        @stack('navbar')
+        @yield('conteudo')
+    </main>
     @include('tamplate.plugins.javascript')
     @include('tamplate.componentes.msg')
     @stack('js-stack')
