@@ -17,12 +17,16 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('email')->unique();
-            $table->integer('funcao_id');
+            $table->unsignedBigInteger('funcao_id');
             $table->integer('telefone')->unique();
             $table->string('email_login')->unique()->nullable();
             $table->string('password')->nullable();
             $table->string('nome');
             $table->string('cpf')->unique();
+        });
+
+        Schema::table('funcionarios',function(Blueprint $table){
+            $table->foreign('funcao_id')->references('id')->on('funcoes')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
