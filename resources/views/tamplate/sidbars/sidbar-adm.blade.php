@@ -13,6 +13,7 @@
 
     <div class="collapse navbar-collapse w-auto h-auto ps" id="sidenav-collapse-main">
         <ul class="navbar-nav">
+
             <li class="nav-item">
                 <a class=" nav-link @yield('ativo-dashboard')" href="">
                     <div
@@ -23,7 +24,26 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio')}}">
+                <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link  collapsed"
+                    aria-controls="dashboardsExamples" role="button" aria-expanded="false">
+                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Condominio</span>
+                </a>
+                <div class="collapse" id="dashboardsExamples" style="">
+                    <ul class="nav ms-4">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../../pages/dashboards/landing.html">
+                                <span class="sidenav-mini-icon"> L </span>
+                                <span class="sidenav-normal"> Landing </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
@@ -41,31 +61,31 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link @yield('ativo-cadastrar-sind')" href="{{route('adm-cadastrar-sindico')}}">
+                <a class="nav-link @yield('ativo-cadastrar-sind')" href="{{ route('adm-cadastrar-sindico') }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Cadastrar Sindico</span>
                 </a>
-                <li class="nav-item">
-                    <a class="nav-link @yield('ativo-cadastrar-port')" href="{{route('adm-cadastrar-funcionario')}}">
-                        <div
-                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Cadastrar Funcionario</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link @yield('ativo-cadastrar-port')" href="{{route('adm-cadastrar-funcionario')}}">
-                        <div
-                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Cadastrar Visitante</span>
-                    </a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link @yield('ativo-cadastrar-port')" href="{{ route('adm-cadastrar-funcionario') }}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Cadastrar Funcionario</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @yield('ativo-cadastrar-port')" href="{{ route('adm-cadastrar-funcionario') }}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Cadastrar Visitante</span>
+                </a>
+            </li>
             </li>
             <li class="nav-item">
                 <a class="nav-link @yield('ativo-caixa') " href="">
