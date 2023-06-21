@@ -23,10 +23,10 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio')}}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Cadastrar Condominio</span>
                 </a>
@@ -35,16 +35,34 @@
                 <a class="nav-link @yield('ativo-vendas') " href="">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-cart text-success text-sm opacity-10"></i>
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Cadastrar Morador</span>
                 </a>
-            </li> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @yield('ativo-cadastrar-sind')" href="{{route('adm-cadastrar-sindico')}}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Cadastrar Sindico</span>
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link @yield('ativo-cadastrar-port')" href="{{route('adm-cadastrar-funcionario')}}">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Cadastrar Funcionario</span>
+                    </a>
+                </li>
+            </li>
             <li class="nav-item">
                 <a class="nav-link @yield('ativo-caixa') " href="">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Lista de Visitantes</span>
                 </a>
@@ -54,9 +72,27 @@
                 <a class="nav-link @yield('ativo-estoque') " href="">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-money-coins text-info text-sm opacity-10"></i>
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Lista de Condominios</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @yield('ativo-estoque') " href="">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Lista de Sindicos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @yield('ativo-estoque') " href="">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Lista de funcionarios</span>
                 </a>
             </li>
 

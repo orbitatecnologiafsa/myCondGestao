@@ -13,10 +13,15 @@ class AdmController extends Controller
 
     public function cadastrarSindicoFMR()
     {
+        return view('adm.cadastrar-sindico');
     }
 
     public function cadastrarMoradorFRM()
     {
     }
-    
+
+    public function cadastrarFuncionarioFRM()
+    {
+        return view('adm.cadastrar-funcionario');
+    }
 }

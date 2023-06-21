@@ -18,6 +18,8 @@ return new class extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('condominio_id');
             $table->unsignedBigInteger('sindico_id');
+            $table->string('email')->unique();
+            $table->string('password');
         });
 
         Schema::table('sindico_condominio',function(Blueprint $table){

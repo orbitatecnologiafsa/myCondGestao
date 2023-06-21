@@ -1,11 +1,11 @@
 @extends('tamplate.layout.main')
-@section('titulo', 'Cadastrar Sindico - adm')
+@section('titulo', 'Cadastrar funcionario - adm')
 @section('conteudo')
 @section('caminho', 'Menu')
-@section('atual-page', 'Cadastrar Sindico')
+@section('atual-page', 'Cadastrar funcionario')
 @section('classBody', 'g-sidenav-show bg-gray-100')
 @section('classMain', 'main-content position-relative border-radius-lg')
-@section('ativo-cadastrar-sind', 'active')
+@section('ativo-cadastrar-funcionario', 'active')
 @section('conteudo')
     @push('sidbar')
         @include('tamplate.sidbars.sidbar-adm')
@@ -20,11 +20,11 @@
                 <form action="">
                     <div class="card-header pb-0">
                         <div class="d-flex align-items-center">
-                            <p class="mb-0">Cadastrar Sindico</p>
+                            <p class="mb-0">Cadastrar Funcionario</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="text-uppercase text-sm">Dados do sindico</p>
+                        <p class="text-uppercase text-sm">Funcionario</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -53,6 +53,18 @@
                                     <label class="form-control-label">Telefone (WhatsApp/Telegram)</label>
                                     <input id="phone" class="form-control" type="text" value=""
                                         onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="form-control-label">Função</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Selecione</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
                                 </div>
                             </div>
 

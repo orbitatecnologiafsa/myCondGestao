@@ -20,8 +20,6 @@ return new class extends Migration
             $table->string('nome');
             $table->string('email_contato')->unique();
             $table->integer('telefone')->unique();
-            $table->string('email_login')->unique();
-            $table->string('password');
         });
     }
 

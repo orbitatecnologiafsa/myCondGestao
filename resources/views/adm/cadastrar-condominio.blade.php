@@ -5,6 +5,7 @@
 @section('atual-page','Cadastrar Condominio')
 @section('classBody', 'g-sidenav-show bg-gray-100')
 @section('classMain', 'main-content position-relative border-radius-lg')
+@section('ativo-cadastrar-cond','active')
 @section('conteudo')
     @push('sidbar')
         @include('tamplate.sidbars.sidbar-adm')
@@ -12,7 +13,6 @@
     @push('navbar')
         @include('tamplate.navs.navbar-adm')
     @endpush
-
 @section('conteudo')
     <div class="container-fluid py-4">
         <div class="col-md-12" style="margin-top:250px;">
@@ -138,14 +138,13 @@
                         </div> --}}
                         <button class="btn btn-primary btn-sm ms-auto">Cadastar</button>
                     </div>
-
                 </form>
             </div>
         </div>
     </div>
 @endsection
 @push('js-stack')
-    <script src="{{ asset('js/senha/exibir-senha.js') }}"></script>
+ 
     <script src="{{asset('js/mascara/jquery.mask.js')}}"></script>
     <script>
         $(document).ready(function(){

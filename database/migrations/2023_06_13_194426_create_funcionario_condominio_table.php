@@ -18,6 +18,8 @@ return new class extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('funcionario_id');
             $table->unsignedBigInteger('condominio_id');
+            $table->string('email')->unique()->nullable();
+            $table->string('password')->nullable();
         });
 
         Schema::table('funcionario_condominio', function (Blueprint $table) {

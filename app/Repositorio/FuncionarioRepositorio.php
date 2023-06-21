@@ -3,4 +3,4 @@
 namespace App\Repositorio;
 
 
-class PorteiroRepositorio{}
+class FuncionarioRepositorio{}

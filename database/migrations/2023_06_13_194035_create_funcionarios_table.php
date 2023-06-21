@@ -19,8 +19,6 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->unsignedBigInteger('funcao_id');
             $table->integer('telefone')->unique();
-            $table->string('email_login')->unique()->nullable();
-            $table->string('password')->nullable();
             $table->string('nome');
             $table->string('cpf')->unique();
         });
