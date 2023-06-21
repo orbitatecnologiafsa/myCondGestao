@@ -36,7 +36,17 @@
                         <li class="nav-item ">
                             <a class="nav-link " href="../../pages/dashboards/landing.html">
                                 <span class="sidenav-mini-icon"> L </span>
-                                <span class="sidenav-normal"> Landing </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <span class="sidenav-normal"> Cadastrar Condominio </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @yield('ativo-vendas') " href="">
+
+                                <span class="sidenav-mini-icon"> C </span>
+                                    <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+
+                                <span class="sidenav-normal">Cadastrar Morador</span>
                             </a>
                         </li>
                     </ul>
