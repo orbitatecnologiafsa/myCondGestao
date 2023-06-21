@@ -24,7 +24,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link  collapsed"
+                <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link @yield('cond-active') collapsed"
                     aria-controls="dashboardsExamples" role="button" aria-expanded="false">
                     <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                         <i class="ni ni-shop text-primary text-sm opacity-10"></i>
@@ -34,106 +34,26 @@
                 <div class="collapse" id="dashboardsExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link " href="../../pages/dashboards/landing.html">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
                                 <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                                <span class="sidenav-normal"> Cadastrar Condominio </span>
+                                <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link @yield('ativo-vendas') " href="">
 
                                 <span class="sidenav-mini-icon"> C </span>
-                                    <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
 
-                                <span class="sidenav-normal">Cadastrar Morador</span>
+                                <span class="sidenav-normal">Lista</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Cadastrar Condominio</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-vendas') " href="">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Cadastrar Morador</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-cadastrar-sind')" href="{{ route('adm-cadastrar-sindico') }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Cadastrar Sindico</span>
-                </a>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-cadastrar-port')" href="{{ route('adm-cadastrar-funcionario') }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Cadastrar Funcionario</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-cadastrar-port')" href="{{ route('adm-cadastrar-funcionario') }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Cadastrar Visitante</span>
-                </a>
-            </li>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-caixa') " href="">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Lista de Visitantes</span>
-                </a>
-            </li>
+            {{-- ç --}}
 
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-estoque') " href="">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Lista de Condominios</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-estoque') " href="">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Lista de Sindicos</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link @yield('ativo-estoque') " href="">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Lista de funcionarios</span>
-                </a>
-            </li>
 
             {{-- <li class="nav-item">
         <a class="nav-link @yield('ativo-perfil') " href="../pages/virtual-reality.html">
@@ -143,7 +63,6 @@
           <span class="nav-link-text ms-1">Meu perfil</span>
         </a>
       </li> --}}
-
 
             <li class="nav-item">
                 <a class="nav-link @yield('ativo-sair')"

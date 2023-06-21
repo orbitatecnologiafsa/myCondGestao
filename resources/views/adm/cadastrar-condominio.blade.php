@@ -7,6 +7,7 @@
 @section('classMain', 'main-content position-relative border-radius-lg')
 @section('ativo-cadastrar-cond','active')
 @section('conteudo')
+@section('cond-active','active')
     @push('sidbar')
         @include('tamplate.sidbars.sidbar-adm')
     @endpush
@@ -144,7 +145,7 @@
     </div>
 @endsection
 @push('js-stack')
- 
+
     <script src="{{asset('js/mascara/jquery.mask.js')}}"></script>
     <script>
         $(document).ready(function(){
