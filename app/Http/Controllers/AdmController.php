@@ -10,4 +10,13 @@ class AdmController extends Controller
     {
         return view('adm.cadastrar-condominio');
     }
+
+    public function cadastrarSindicoFMR()
+    {
+    }
+
+    public function cadastrarMoradorFRM()
+    {
+    }
+    
 }

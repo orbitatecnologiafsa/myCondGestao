@@ -46,6 +46,7 @@ class SessaoController extends Controller
     {
         return view('login.login-porteiro');
     }
+    
     public function porteiroPostLogin(LoginRequest $login)
     {
     }
