@@ -24,14 +24,14 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link @yield('cond-active') collapsed"
-                    aria-controls="dashboardsExamples" role="button" aria-expanded="false">
+                <a data-bs-toggle="collapse" href="#condominioExamples" class="nav-link @yield('cond-active') collapsed"
+                    aria-controls="condominioExamples" role="button" aria-expanded="false">
                     <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                         <i class="ni ni-shop text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Condominio</span>
                 </a>
-                <div class="collapse" id="dashboardsExamples" style="">
+                <div class="collapse" id="condominioExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
                             <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
@@ -52,8 +52,185 @@
                     </ul>
                 </div>
             </li>
-            {{-- ç --}}
+            <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sindicoExamples" class="nav-link @yield('sind-active') collapsed"
+                    aria-controls="sindicoExamples" role="button" aria-expanded="false">
+                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Sindico</span>
+                </a>
+                <div class="collapse" id="sindicoExamples" style="">
+                    <ul class="nav ms-4">
+                        <li class="nav-item ">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                                <span class="sidenav-mini-icon"> L </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <span class="sidenav-normal">Cadastrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @yield('ativo-vendas') " href="">
 
+                                <span class="sidenav-mini-icon"> C </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+
+                                <span class="sidenav-normal">Lista</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#moradorExamples" class="nav-link @yield('morador-active') collapsed"
+                    aria-controls="moradorExamples" role="button" aria-expanded="false">
+                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Morador</span>
+                </a>
+                <div class="collapse" id="moradorExamples" style="">
+                    <ul class="nav ms-4">
+                        <li class="nav-item ">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                                <span class="sidenav-mini-icon"> C </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <span class="sidenav-normal">Cadastrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @yield('ativo-vendas') " href="">
+
+                                <span class="sidenav-mini-icon"> L </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+
+                                <span class="sidenav-normal">Lista</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#funcionarioExamples"
+                    class="nav-link @yield('funcionario-active') collapsed" aria-controls="funcionarioExamples" role="button"
+                    aria-expanded="false">
+                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Funcionario</span>
+                </a>
+                <div class="collapse" id="funcionarioExamples" style="">
+                    <ul class="nav ms-4">
+                        <li class="nav-item ">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                                <span class="sidenav-mini-icon"> C </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <span class="sidenav-normal">Cadastrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @yield('ativo-vendas') " href="">
+
+                                <span class="sidenav-mini-icon"> L </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+
+                                <span class="sidenav-normal">Lista</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#visitanteExamples" class="nav-link @yield('visitante-active') collapsed"
+                    aria-controls="visitanteExamples" role="button" aria-expanded="false">
+                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Visitante</span>
+                </a>
+                <div class="collapse" id="visitanteExamples" style="">
+                    <ul class="nav ms-4">
+                        <li class="nav-item ">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                                <span class="sidenav-mini-icon"> C </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <span class="sidenav-normal">Cadastrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @yield('ativo-vendas') " href="">
+
+                                <span class="sidenav-mini-icon"> L </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+
+                                <span class="sidenav-normal">Lista</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#funcoesExamples" class="nav-link @yield('funcoes-active') collapsed"
+                    aria-controls="funcoesExamples" role="button" aria-expanded="false">
+                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Funções</span>
+                </a>
+                <div class="collapse" id="funcoesExamples" style="">
+                    <ul class="nav ms-4">
+                        <li class="nav-item ">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                                <span class="sidenav-mini-icon"> C </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <span class="sidenav-normal">Cadastrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @yield('ativo-vendas') " href="">
+
+                                <span class="sidenav-mini-icon"> L </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+
+                                <span class="sidenav-normal">Lista</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#admExamples" class="nav-link @yield('adm-active') collapsed"
+                    aria-controls="admExamples" role="button" aria-expanded="false">
+                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-primary text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Adm</span>
+                </a>
+                <div class="collapse" id="admExamples" style="">
+                    <ul class="nav ms-4">
+                        <li class="nav-item ">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                                <span class="sidenav-mini-icon"> C </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                                <span class="sidenav-normal">Cadastrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @yield('ativo-vendas') " href="">
+
+                                <span class="sidenav-mini-icon"> L </span>
+                                <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+
+                                <span class="sidenav-normal">Lista</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
 
             {{-- <li class="nav-item">
         <a class="nav-link @yield('ativo-perfil') " href="../pages/virtual-reality.html">
