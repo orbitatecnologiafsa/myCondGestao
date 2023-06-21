@@ -1,7 +1,8 @@
 @extends('tamplate.layout.main')
 @section('titulo', 'Cadastrar Condominio - adm')
 @section('conteudo')
-
+@section('caminho','Menu')
+@section('atual-page','Cadastrar Condominio')
 @section('classBody', 'g-sidenav-show bg-gray-100')
 @section('classMain', 'main-content position-relative border-radius-lg')
 @section('conteudo')
