@@ -6,22 +6,29 @@ use Illuminate\Http\Request;
 
 class AdmController extends Controller
 {
-    public function cadastrarCondiminioFMR()
+    public function cadastrarCondiminioFRM()
     {
         return view('adm.cadastrar-condominio');
     }
 
-    public function cadastrarSindicoFMR()
+    public function cadastrarSindicoFRM()
     {
         return view('adm.cadastrar-sindico');
     }
 
-    public function cadastrarMoradorFRM()
-    {
-    }
 
     public function cadastrarFuncionarioFRM()
     {
         return view('adm.cadastrar-funcionario');
+    }
+
+    public function cadastrarMoradorFRM()
+    {
+        return view('adm.cadastrar-morador');
+    }
+
+    public function cadastrarVisitanteFRM()
+    {
+
     }
 }

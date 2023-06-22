@@ -93,7 +93,7 @@
                 <div class="collapse" id="moradorExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link @yield('ativo-cadastrar-morador')"href="">
+                            <a class="nav-link @yield('ativo-cadastrar-morador')"href="{{route('adm-cadastrar-morador')}}">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>

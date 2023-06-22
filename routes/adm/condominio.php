@@ -5,5 +5,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::controller(AdmController::class)->prefix('adm')->group(function(){
-    Route::get('/cadastrar-condominio','cadastrarCondiminioFMR')->name('adm-cadastrar-condominio');
+    Route::get('/cadastrar-condominio','cadastrarCondiminioFRM')->name('adm-cadastrar-condominio');
 });
