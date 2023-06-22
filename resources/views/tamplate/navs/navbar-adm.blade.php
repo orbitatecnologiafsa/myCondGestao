@@ -7,7 +7,7 @@
                         href="javascript:;">@yield('caminho')</a></li>
                 <li class="breadcrumb-item text-sm text-white active" aria-current="page">@yield('atual-page')</li>
             </ol>
-            <h6 class="font-weight-bolder text-white mb-0">@yield('atual-page')</h6><br>
+            <h6 class="font-weight-bolder text-white mb-0">@yield('atual-page-real')</h6><br>
             {{-- <h6 class="font-weight-bolder text-white mb-0" id='ultima-atualizacao'>
                 <div class="spinner-border" role="status">
                     <span class="visually-hidden">Loading...</span>

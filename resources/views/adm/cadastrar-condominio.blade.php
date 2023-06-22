@@ -3,6 +3,7 @@
 @section('conteudo')
 @section('caminho','Menu')
 @section('atual-page','Cadastrar Condominio')
+@section('atual-page-real','Cadastrar condominio')
 @section('classBody', 'g-sidenav-show bg-gray-100')
 @section('classMain', 'main-content position-relative border-radius-lg')
 @section('ativo-cadastrar-cond','active')

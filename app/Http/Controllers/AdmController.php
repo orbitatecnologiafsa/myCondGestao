@@ -29,6 +29,6 @@ class AdmController extends Controller
 
     public function cadastrarVisitanteFRM()
     {
-
+        return view('adm.cadastrar-visitante');
     }
 }

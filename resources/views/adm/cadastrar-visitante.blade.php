@@ -1,13 +1,13 @@
 @extends('tamplate.layout.main')
-@section('titulo', 'Cadastrar morador - adm')
+@section('titulo', 'Cadastrar visitante - adm')
 @section('conteudo')
 @section('caminho', 'Menu')
-@section('atual-page', 'Morador / Cadastrar')
-@section('atual-page-real', 'Cadastrar morador ')
+@section('atual-page', 'Visitante / Cadastrar')
+@section('atual-page-real','Cadastrar Visitante')
 @section('classBody', 'g-sidenav-show bg-gray-100')
 @section('classMain', 'main-content position-relative border-radius-lg')
-@section('ativo-cadastrar-morador', 'active')
-@section('morador-active', 'active')
+@section('ativo-cadastrar-visitante', 'active')
+@section('visitante-active', 'active')
 @section('conteudo')
     @push('sidbar')
         @include('tamplate.sidbars.sidbar-adm')
@@ -22,11 +22,11 @@
                 <form action="">
                     <div class="card-header pb-0">
                         <div class="d-flex align-items-center">
-                            <p class="mb-0">Cadastrar Morador</p>
+                            <p class="mb-0">Cadastrar Visitante</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="text-uppercase text-sm">Morador</p>
+                        <p class="text-uppercase text-sm">Visitante</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -45,13 +45,6 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label">Email - contato</label>
-                                    <input class="form-control" type="text" value="" onfocus="focused(this)"
-                                        onfocusout="defocused(this)">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
                                     <label class="form-control-label">Telefone (WhatsApp/Telegram)</label>
                                     <input id="phone" class="form-control" type="text" value=""
                                         onfocus="focused(this)" onfocusout="defocused(this)">
@@ -59,14 +52,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label">Bloco</label>
-                                    <input id="" class="form-control" type="text" value=""
-                                        onfocus="focused(this)" onfocusout="defocused(this)">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label">Numero</label>
+                                    <label class="form-control-label">Foto do visitante</label>
                                     <input id="" class="form-control" type="text" value=""
                                         onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
