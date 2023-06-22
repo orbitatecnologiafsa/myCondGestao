@@ -35,15 +35,15 @@
                     <ul class="nav ms-4">
                         <li class="nav-item ">
                             <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
-                                <span class="sidenav-mini-icon"> L </span>
+                                <span class="sidenav-mini-icon"> C </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @yield('ativo-vendas') " href="">
+                            <a class="nav-link @yield('ativo-lista-cond') " href="">
 
-                                <span class="sidenav-mini-icon"> C </span>
+                                <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
 
                                 <span class="sidenav-normal">Lista</span>
@@ -63,16 +63,16 @@
                 <div class="collapse" id="sindicoExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                            <a class="nav-link @yield('ativo-cadastrar-sind')"href="{{ route('adm-cadastrar-sindico') }}">
                                 <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @yield('ativo-vendas') " href="">
+                            <a class="nav-link @yield('ativo-lista-sind') " href="">
 
-                                <span class="sidenav-mini-icon"> C </span>
+                                <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
 
                                 <span class="sidenav-normal">Lista</span>
@@ -93,14 +93,14 @@
                 <div class="collapse" id="moradorExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                            <a class="nav-link @yield('ativo-cadastrar-morador')"href="">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @yield('ativo-vendas') " href="">
+                            <a class="nav-link @yield('ativo-lista-morador') " href="">
 
                                 <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
@@ -124,14 +124,14 @@
                 <div class="collapse" id="funcionarioExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                            <a class="nav-link @yield('ativo-cadastrar-funcionario')"href="{{ route('adm-cadastrar-funcionario') }}">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @yield('ativo-vendas') " href="">
+                            <a class="nav-link @yield('ativo-lista-funcionario') " href="">
 
                                 <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
@@ -154,14 +154,14 @@
                 <div class="collapse" id="visitanteExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                            <a class="nav-link @yield('ativo-cadastrar-visitante')"href="">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @yield('ativo-vendas') " href="">
+                            <a class="nav-link @yield('ativo-lista-visitante') " href="">
 
                                 <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
@@ -184,14 +184,14 @@
                 <div class="collapse" id="funcoesExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                            <a class="nav-link @yield('ativo-cadastrar-funcao')"href="">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @yield('ativo-vendas') " href="">
+                            <a class="nav-link @yield('ativo-lista-funcao')" href="">
 
                                 <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
@@ -213,14 +213,14 @@
                 <div class="collapse" id="admExamples" style="">
                     <ul class="nav ms-4">
                         <li class="nav-item ">
-                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="{{ route('adm-cadastrar-condominio') }}">
+                            <a class="nav-link @yield('ativo-cadastrar-cond')"href="">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
                                 <span class="sidenav-normal">Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @yield('ativo-vendas') " href="">
+                            <a class="nav-link @yield('ativo-lista-cond') " href="">
 
                                 <span class="sidenav-mini-icon"> L </span>
                                 <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>

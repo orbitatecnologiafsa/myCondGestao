@@ -6,6 +6,7 @@
 @section('classBody', 'g-sidenav-show bg-gray-100')
 @section('classMain', 'main-content position-relative border-radius-lg')
 @section('ativo-cadastrar-funcionario', 'active')
+@section('funcionario-active','active')
 @section('conteudo')
     @push('sidbar')
         @include('tamplate.sidbars.sidbar-adm')
