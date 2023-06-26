@@ -3,7 +3,7 @@
 @section('conteudo')
 @section('caminho', 'Menu')
 @section('atual-page', 'Visitante / Cadastrar')
-@section('atual-page-real','Cadastrar Visitante')
+@section('atual-page-real', 'Cadastrar Visitante')
 @section('classBody', 'g-sidenav-show bg-gray-100')
 @section('classMain', 'main-content position-relative border-radius-lg')
 @section('ativo-cadastrar-visitante', 'active')
@@ -15,7 +15,7 @@
     @push('navbar')
         @include('tamplate.navs.navbar-adm')
     @endpush
-    @section('conteudo')
+@section('conteudo')
     <div class="container-fluid py-4">
         <div class="col-md-12" style="margin-top:250px;">
             <div class="card">
@@ -28,6 +28,18 @@
                     <div class="card-body">
                         <p class="text-uppercase text-sm">Visitante</p>
                         <div class="row">
+                            <div class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <img src="{{ asset('img/marie.jpg') }}" id='img_perfil_user'
+                                        class="img-fluid border-radius-lg rounded-circle" alt="..." style="width: 200px; heigth:200px;" >
+                                </div>
+                                <div>
+                                    <label class="btn btn-primary btn-sm ms-auto" for="img_perfil" style="margin-top:10px;">Adicionar
+                                        foto de perfil</label>
+                                    <input type="file" name="img_perfil" id="img_perfil" accept="image/*" hidden
+                                        onchange="loadFile(event);">
+                                </div>
+                            </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">Nome</label>
@@ -50,13 +62,7 @@
                                         onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label">Foto do visitante</label>
-                                    <input id="" class="form-control" type="text" value=""
-                                        onfocus="focused(this)" onfocusout="defocused(this)">
-                                </div>
-                            </div>
+
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="form-control-label">Condominio</label>
@@ -109,7 +115,6 @@
         </div>
     </div>
     @push('js-stack')
-
         <script src="{{ asset('js/mascara/jquery.mask.js') }}"></script>
         <script>
             $(document).ready(function() {
@@ -119,6 +124,13 @@
                 });
                 $('#phone').mask('(75) 00000-0000');
             });
+            var loadFile = function(event) {
+                var output = document.getElementById('img_perfil_user');
+                output.src = URL.createObjectURL(event.target.files[0]);
+                output.onload = function() {
+                    URL.revokeObjectURL(output.src) // free memory
+                }
+            };
         </script>
     @endpush
 @endsection

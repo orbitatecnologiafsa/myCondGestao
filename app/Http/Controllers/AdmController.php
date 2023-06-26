@@ -31,4 +31,9 @@ class AdmController extends Controller
     {
         return view('adm.cadastrar-visitante');
     }
+
+    public function dashbordPage()
+    {
+        return view('adm.dashboard');
+    }
 }
